@@ -1,0 +1,24 @@
+{
+  "name": "wfind",
+  "version": "1.0.0",
+  "description": "Find text within all resources of a webpage",
+  "main": "index.js",
+  "bin": {
+    "wfind": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "web",
+    "webpage",
+    "find"
+  ],
+  "author": "steven.almeroth@gmail.com",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "co": "^4.6.0",
+    "co-prompt": "^1.0.0",
+    "commander": "^2.16.0"
+  }
+}
