@@ -19,6 +19,7 @@
   "dependencies": {
     "co": "^4.6.0",
     "co-prompt": "^1.0.0",
-    "commander": "^2.16.0"
+    "commander": "^2.16.0",
+    "findit": "^2.0.0"
   }
 }
