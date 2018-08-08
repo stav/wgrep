@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Condole interface for wfind
+ * Console interface for wfind
  */
 'use strict';
 const co = require('co');
