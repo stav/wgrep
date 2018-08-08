@@ -8,8 +8,7 @@ This command-line utility uses a headless browser (Puppeteer) to render a webpag
 
 ## Code Example
 
-	wfind domain http://example.com
-	Hello, world!
+	$ wgrep domain http://example.com
 	Calling for "domain" at "http://example.com" with user "undefined"
 	Downloading "http://example.com"
 	http://example.com
@@ -23,7 +22,9 @@ This project was created to aid in the scraping of web pages. I could see some t
 
 ## Installation
 
-Provide code examples and explanations of how to get the project.
+	wgrep$ npm install
+	added 5 packages from 3 contributors and audited 55 packages in 1.06s
+	found 0 vulnerabilities
 
 ## License
 
