@@ -7,8 +7,6 @@ const co = require('co');
 const wgrep = require('./wgrep');
 const program = require('commander');
 
-console.log('Hello, world!')
-
 program
   .arguments('<text> <url>')
   .option('-u, --username <username>', 'The user to authenticate as')
