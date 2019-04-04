@@ -27,7 +27,9 @@ from some XHR resource downloaded with JavaScript.
 
 ## Installation
 
-	wgrep$ npm install -g
+	$ git clone https://github.com/stav/wgrep.git
+	$ cd wgrep
+	$ npm install -g
 	added 5 packages from 3 contributors and audited 55 packages in 1.06s
 	found 0 vulnerabilities
 
