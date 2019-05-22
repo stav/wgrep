@@ -22,6 +22,7 @@
     "co-prompt": "^1.0.0",
     "commander": "^2.16.0",
     "findit": "^2.0.0",
+    "fs-extra": "^8.0.1",
     "puppeteer": "^1.6.2"
   }
 }
