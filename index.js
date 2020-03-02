@@ -16,7 +16,7 @@ const program = require('commander');
       co(function *() {
         console.log('Calling for "%s" at "%s" with user "%s"', text, url, program.username)
         console.log(yield wgrep.download( url ))
-        console.log(wgrep.find( text ))
+        wgrep.find( text )
       });
 
    })

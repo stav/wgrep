@@ -1,0 +1,7 @@
+name: 'Testit'
+
+description: 'test this thing'
+
+runs:
+  using: 'node12'
+  main: './index.js'

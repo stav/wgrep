@@ -55,7 +55,6 @@ const find = function ( text ) {
     });
 
   })
-  return
 }
 
 exports.download = download;

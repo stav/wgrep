@@ -1,21 +1,21 @@
 {
   "name": "wgrep",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Find text within all resources of a webpage",
   "main": "index.js",
   "bin": {
     "wgrep": "./index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./index.js wgrep https://github.com/stav/wgrep"
   },
   "keywords": [
-    "web",
-    "webpage",
+    "find",
     "grep",
-    "find"
+    "web",
+    "webpage"
   ],
-  "author": "steven.almeroth@gmail.com",
+  "author": "sroth77@gmail.com",
   "license": "Apache-2.0",
   "dependencies": {
     "co": "^4.6.0",

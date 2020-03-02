@@ -29,7 +29,6 @@ Let's try to find the string "grep" from the repository website on GitHub:
 	https://github.com/stav/wgrep
 	seems ok
 	Finding "grep"
-	undefined
 	  * output/stav/wgrep/index.html
 	  * output/stav/wgrep/index.html
 
