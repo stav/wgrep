@@ -1,7 +1,6 @@
 /**
  * Find text within all resources of a webpage
  */
-'use strict';
 const puppeteer = require('puppeteer');
 const { URL } = require('url');  // core
 const findit = require('findit')
