@@ -9,17 +9,22 @@ const program = require('commander');
 (async () => {
 
   program
-    .arguments('<text> <url>')
+    .arguments('<regex> <url>')
+    .option('-d, --directory <directory>', 'The output directory', 'output')
     .option('-u, --username <username>', 'The user to authenticate as')
-    .action(function( text, url ) {
+    .action(function( regex, url ) {
 
-      co(function *() {
-        console.log('Calling for "%s" at "%s" with user "%s"', text, url, program.username)
-        console.log(yield wgrep.download( url ))
-        wgrep.find( text )
+      co(async function () {
+        console.log(`Calling for "${regex}" in "${program.directory}" from "${url}" with user "${program.username}"`)
+        const errors = await wgrep.download( url, program.directory );
+        if ( errors.flag ) {
+          console.log('Errors', errors)
+        }
+        wgrep.show(wgrep.find( program.directory, regex ))
       });
 
    })
    .parse(process.argv)
 
-})();
+})()
+

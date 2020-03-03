@@ -22,15 +22,12 @@ size.
 
 Let's try to find the string "grep" from the repository website on GitHub:
 
-	$ wgrep grep https://github.com/stav/wgrep
+	$ wgrep stav https://github.com/stav/wgrep
 
-	Calling for "grep" at "https://github.com/stav/wgrep" with user "undefined"
-	Downloading "https://github.com/stav/wgrep"
-	https://github.com/stav/wgrep
-	seems ok
-	Finding "grep"
-	  * output/stav/wgrep/index.html
-	  * output/stav/wgrep/index.html
+	Calling for "stav" in "output" from "https://github.com/stav/wgrep" with user "undefined"
+	Looking in "output" for 'stav'
+	Found 1 files
+	[ 'output/stav/wgrep/index.html' ]
 
 It was found (twice) in the `index.html` page.
 
@@ -38,6 +35,21 @@ Now let's see what the total download size was:
 
 	$ du -sh output
 	1.4M    output
+
+## Options
+
+	$ wgrep --help
+
+	Usage: wgrep [options] <regex> <url>
+
+	Options:
+	  -d, --directory <directory>  The output directory (default: "output")
+	  -u, --username <username>    The user to authenticate as
+	  -h, --help                   output usage information
+
+## Features
+
+* Search using regular expressions
 
 ## Contributing
 
