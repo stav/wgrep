@@ -21,7 +21,7 @@ size.
 
 ## Usage example
 
-Let's try to find the string "grep" from the repository website on GitHub:
+Let's try to find the string "stav" from the repository website on GitHub:
 
 	$ wgrep stav https://github.com/stav/wgrep
 
@@ -30,7 +30,7 @@ Let's try to find the string "grep" from the repository website on GitHub:
 	Found 1 files
 	[ 'output/stav/wgrep/index.html' ]
 
-It was found (twice) in the `index.html` page.
+It was only found in the `index.html` page.
 
 Now let's see what the total download size was:
 
