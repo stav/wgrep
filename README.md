@@ -1,6 +1,7 @@
 # wgrep
 > Web grep: search all rendered resources used by a URI
 
+[![Tests][test-image]][test-url]
 [![Badge Fury][fury-image]][fury-url]
 [![Inline docs][inch-image]][inch-url]
 
@@ -75,6 +76,8 @@ repo and submit a pull request:
 Apache 2.0
 
 <!-- Markdown link & img dfn's -->
+[test-image]: https://github.com/stav/wgrep/workflows/e2e/badge.svg
+[test-url]:   https://github.com/stav/wgrep/workflows
 [fury-image]: https://badge.fury.io/gh/stav%2Fwgrep.svg
 [fury-url]:   https://badge.fury.io/gh/stav%2Fwgrep
 [inch-image]: http://inch-ci.org/github/stav/wgrep.svg?branch=master
