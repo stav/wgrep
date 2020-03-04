@@ -11,8 +11,12 @@ a webpage and download all resources it may need. These resources including the
 original HTML are all saved locally which it searches one-by-one for a text
 string.
 
-Since we are downloading all resources it is easy to determine the total download
-size.
+*Since we are downloading all resources it is easy to determine the total
+download size.*
+
+## Features
+
+* Search using regular expressions
 
 ## Installation
 
@@ -49,9 +53,11 @@ Now let's see what the total download size was:
 	  -u, --username <username>    The user to authenticate as
 	  -h, --help                   output usage information
 
-## Features
+## Tests
 
-* Search using regular expressions
+	$ npm test
+
+	$ npm run e2e-test
 
 ## Contributing
 
