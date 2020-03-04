@@ -7,7 +7,8 @@
     "wgrep": "./index.js"
   },
   "scripts": {
-    "test": "./index.js wgrep https://github.com/stav/wgrep"
+    "test": "jest",
+    "e2e-test": "./index.js wgrep https://github.com/stav/wgrep"
   },
   "keywords": [
     "find",
@@ -24,5 +25,8 @@
     "fs-extra": "^8.0.1",
     "puppeteer": "^2.1.1",
     "shelljs": "^0.8.3"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0"
   }
 }

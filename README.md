@@ -4,6 +4,7 @@
 [![Tests][test-image]][test-url]
 [![Badge Fury][fury-image]][fury-url]
 [![Inline docs][inch-image]][inch-url]
+[![Dependencies][deps-image]][deps-url]
 
 This `node` command-line utility uses a headless browser (Puppeteer) to render
 a webpage and download all resources it may need. These resources including the
@@ -82,3 +83,5 @@ Apache 2.0
 [fury-url]:   https://badge.fury.io/gh/stav%2Fwgrep
 [inch-image]: http://inch-ci.org/github/stav/wgrep.svg?branch=master
 [inch-url]:   http://inch-ci.org/github/stav/wgrep
+[deps-image]: https://david-dm.org/stav/wgrep/status.svg
+[deps-url]:   https://david-dm.org/stav/wgrep
