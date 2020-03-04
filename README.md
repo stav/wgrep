@@ -1,6 +1,7 @@
 # wgrep
 > Web grep: search all rendered resources used by a URI
 
+[![Coverage][cov-image]][cov-url]
 [![Tests][test-image]][test-url]
 [![Dependencies][deps-image]][deps-url]
 [![Badge Fury][fury-image]][fury-url]
@@ -92,3 +93,5 @@ Apache 2.0
 [inch-url]:   http://inch-ci.org/github/stav/wgrep
 [deps-image]: https://david-dm.org/stav/wgrep/status.svg
 [deps-url]:   https://david-dm.org/stav/wgrep
+[cov-image]:  https://codecov.io/gh/stav/wgrep/branch/master/graph/badge.svg
+[cov-url]:    https://codecov.io/github/stav/wgrep
