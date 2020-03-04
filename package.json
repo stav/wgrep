@@ -8,7 +8,11 @@
   },
   "scripts": {
     "test": "jest",
-    "e2e-test": "node index.js wgrep https://github.com/stav/wgrep"
+    "test-ci": "jest --ci",
+    "test-thr": "jest --maxWorkers=2",
+    "test-seq": "jest --runInBand",
+    "test-opn": "jest --runInBand --detectOpenHandles",
+    "test-e2e": "node index.js wgrep https://github.com/stav/wgrep"
   },
   "keywords": [
     "find",

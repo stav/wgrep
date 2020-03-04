@@ -21,7 +21,7 @@ jobs:
 
     - run: npm ci
     - run: npm test
-    - run: npm run e2e-test
+    - run: npm run test-e2e
 
     - name: Upload coverage to Codecov
       if: matrix.os == 'ubuntu-latest' && matrix.node-version == '12.x'

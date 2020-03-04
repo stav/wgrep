@@ -59,7 +59,7 @@ Now let's see what the total download size was:
 
 	$ npm test
 
-	$ npm run e2e-test
+	$ npm run test-e2e
 
 ## Contributing
 
