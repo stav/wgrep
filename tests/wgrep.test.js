@@ -1,7 +1,7 @@
 /**
  * Test wgrep script
  */
-const wgrep = require('./wgrep');
+const wgrep = require('../wgrep');
 
 describe('Download', () => {
   test('should return no errors', async () => {
