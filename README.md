@@ -17,6 +17,7 @@ download size.*
 ## Features
 
 * Search using regular expressions
+* A screen capture is created (not configurable)
 
 ## Installation
 
