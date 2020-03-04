@@ -10,9 +10,13 @@ test('find text in folder', () => {
   expect(files).toHaveLength(1);
 });
 
-test('do not find anything for non-existent folder', () => {
+test('find nothing in non-existent folder', () => {
   const dir = 'DOES-NOT-EXIST';
   const regex = /.+/;
   const files = wgrep.find( dir, regex )
   expect(files).toHaveLength(0);
+});
+
+test('show returns undefined', () => {
+  expect(wgrep.show([])).toBeUndefined();
 });
