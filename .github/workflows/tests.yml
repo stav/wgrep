@@ -20,7 +20,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - run: npm ci
-    - run: npm run test-ci
+    - run: npm run test-seq
     - run: npm run test-e2e
 
     - name: Upload coverage to Codecov

@@ -8,8 +8,9 @@
   },
   "scripts": {
     "test": "jest",
-    "test-ci": "jest --maxWorkers=2",
-    "test-seq": "jest --runInBand --detectOpenHandles",
+    "test-thr": "jest --maxWorkers=2",
+    "test-seq": "jest --runInBand",
+    "test-deb": "jest --runInBand --detectOpenHandles",
     "test-e2e": "node index.js wgrep https://github.com/stav/wgrep"
   },
   "keywords": [
