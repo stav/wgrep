@@ -61,6 +61,8 @@ Now let's see what the total download size was:
 
 	$ npm run e2e-test
 
+	$ jest --runInBand --detectOpenHandles
+
 ## Contributing
 
 Please file any issues you have.
