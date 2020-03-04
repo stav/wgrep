@@ -10,10 +10,10 @@ describe('Download', () => {
     expect(download).toStrictEqual(expect.objectContaining({flag: false}));
   }, timeout);
 
-  test('should return network error', async () => {
-    const download = await wgrep.download('badscheme://example.com/', 'output');
-    expect(download).toStrictEqual(expect.objectContaining({net: 1}));
-  });
+  // test('should return network error', async () => {
+  //   const download = await wgrep.download('badscheme://example.com/', 'output');
+  //   expect(download).toStrictEqual(expect.objectContaining({net: 1}));
+  // });
 
   // // This will increase code coverage to 100% if we hardcode the parent
   // // traversal correctly but kinda lame, dangerous and hard to cleanup.
