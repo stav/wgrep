@@ -4,11 +4,11 @@
   "description": "Find text within all resources of a webpage",
   "main": "index.js",
   "bin": {
-    "wgrep": "./index.js"
+    "wgrep": "index.js"
   },
   "scripts": {
     "test": "jest",
-    "e2e-test": "./index.js wgrep https://github.com/stav/wgrep"
+    "e2e-test": "node index.js wgrep https://github.com/stav/wgrep"
   },
   "keywords": [
     "find",

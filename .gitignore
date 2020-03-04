@@ -1,4 +1,5 @@
 output/
+coverage/
 outputimage/
 node_modules/
 screencap.png
