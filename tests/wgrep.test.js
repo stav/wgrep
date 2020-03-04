@@ -8,7 +8,7 @@ describe('Download', () => {
   test('should return no errors', async () => {
     const download = await wgrep.download('https://example.com/', 'output');
     expect(download).toStrictEqual(expect.objectContaining({flag: false}));
-  });
+  }, timeout);
 
   test('should return network error', async () => {
     const download = await wgrep.download('badscheme://example.com/', 'output');
