@@ -2,6 +2,7 @@
  * Test wgrep script
  */
 const wgrep = require('../wgrep');
+const timeout = 10000;
 
 describe('Download', () => {
   test('should return no errors', async () => {
@@ -21,7 +22,7 @@ describe('Download', () => {
   //   const download = await wgrep.download('https://example.com/', '../../../../');
   //   expect(download).toStrictEqual(expect.objectContaining({buf: 1}));
   // });
-});
+}, timeout);
 
 describe('Find', () => {
   test('should find text in folder', () => {
