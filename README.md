@@ -2,9 +2,9 @@
 > Web grep: search all rendered resources used by a URI
 
 [![Tests][test-image]][test-url]
+[![Dependencies][deps-image]][deps-url]
 [![Badge Fury][fury-image]][fury-url]
 [![Inline docs][inch-image]][inch-url]
-[![Dependencies][deps-image]][deps-url]
 
 This `node` command-line utility uses a headless browser (Puppeteer) to render
 a webpage and download all resources it may need. These resources including the
@@ -77,7 +77,7 @@ repo and submit a pull request:
 Apache 2.0
 
 <!-- Markdown link & img dfn's -->
-[test-image]: https://github.com/stav/wgrep/workflows/e2e/badge.svg
+[test-image]: https://github.com/stav/wgrep/workflows/Tests/badge.svg
 [test-url]:   https://github.com/stav/wgrep/workflows
 [fury-image]: https://badge.fury.io/gh/stav%2Fwgrep.svg
 [fury-url]:   https://badge.fury.io/gh/stav%2Fwgrep
