@@ -5,9 +5,10 @@ const wgrep = require('../wgrep');
 const timeout = 10000;
 
 describe('Download', () => {
-  test('should return no errors', async () => {
+  test('should return no errors', async (done) => {
     const download = await wgrep.download('https://example.com/', 'output');
     expect(download).toStrictEqual(expect.objectContaining({flag: false}));
+    done()
   }, timeout);
 
   // test('should return network error', async () => {
