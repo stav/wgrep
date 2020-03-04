@@ -85,7 +85,7 @@ repo and submit a pull request:
 Apache 2.0
 
 <!-- Markdown link & img dfn's -->
-[test-image]: https://github.com/stav/wgrep/workflows/Tests/badge.svg
+[test-image]: https://github.com/stav/wgrep/workflows/tests/badge.svg
 [test-url]:   https://github.com/stav/wgrep/workflows
 [fury-image]: https://badge.fury.io/gh/stav%2Fwgrep.svg
 [fury-url]:   https://badge.fury.io/gh/stav%2Fwgrep
