@@ -10,7 +10,7 @@
     "test": "jest",
     "test-thr": "jest --maxWorkers=2",
     "test-seq": "jest --runInBand",
-    "test-opn": "jest --runInBand --detectOpenHandles",
+    "test-opn": "jest --runInBand --detectOpenHandles --maxWorkers=1",
     "test-e2e": "node index.js wgrep https://github.com/stav/wgrep"
   },
   "keywords": [
