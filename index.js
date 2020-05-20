@@ -27,4 +27,3 @@ const program = require('commander');
    .parse(process.argv)
 
 })()
-
