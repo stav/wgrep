@@ -1,10 +1,12 @@
-name: "tests"
+name: "Testies"
 
 on: [push]
 
 jobs:
 
   unit-tests:
+
+    name: Unit tests
 
     strategy:
       matrix:
@@ -16,8 +18,6 @@ jobs:
     steps:
     - name: Node ${{ matrix.node-version }} on ${{ matrix.os }}
       uses: actions/checkout@v2
-      with:
-        node-version: ${{ matrix.node-version }}
 
     - run: npm ci
     - run: npm test
