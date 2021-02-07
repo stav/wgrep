@@ -87,8 +87,8 @@ Apache 2.0
 <!-- Markdown link & img dfn's -->
 [test-image]: https://github.com/stav/wgrep/workflows/tests/badge.svg
 [test-url]:   https://github.com/stav/wgrep/workflows
-[fury-image]: https://badge.fury.io/gh/stav%2Fwgrep.svg
-[fury-url]:   https://badge.fury.io/gh/stav%2Fwgrep
+[fury-image]: https://badge.fury.io/for/gh/stav%2Fwgrep.svg
+[fury-url]:   https://badge.fury.io/for/gh/stav%2Fwgrep
 [inch-image]: http://inch-ci.org/github/stav/wgrep.svg?branch=master
 [inch-url]:   http://inch-ci.org/github/stav/wgrep
 [deps-image]: https://david-dm.org/stav/wgrep/status.svg
