@@ -30,7 +30,7 @@ const download = async function ( url, directory ) {
       await fse.outputFile(filePath, await response.buffer());
     }
     catch (e) {
-      // console.log(e.toString(), _url.href)
+      console.warn(e.toString(), _url.href, filePath)
       errors.flag = true;
       errors.buf++
     }
