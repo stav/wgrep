@@ -3,9 +3,7 @@
 
 [![Coverage][cov-image]][cov-url]
 [![Tests][test-image]][test-url]
-[![Dependencies][deps-image]][deps-url]
-[![Badge Fury][fury-image]][fury-url]
-[![Inline docs][inch-image]][inch-url]
+[![Badge Fury][fury-image]]
 
 This `node` command-line utility uses a headless browser (Puppeteer) to render
 a webpage and download all resources it may need. These resources including the
@@ -74,24 +72,13 @@ repo and submit a pull request:
 4. Push to the branch (`git push origin feature/fooBar`)
 5. Create a new Pull Request
 
-## Status
-
-* https://david-dm.org/stav/wgrep
-* https://inch-ci.org/github/stav/wgrep?branch=master   ????
-* https://badge.fury.io/for/gh/stav/wgrep
-
 ## License
 
 Apache 2.0
 
 <!-- Markdown link & img dfn's -->
 [test-image]: https://github.com/stav/wgrep/workflows/tests/badge.svg
-[test-url]:   https://github.com/stav/wgrep/workflows
+[test-url]:   https://github.com/stav/wgrep/actions
 [fury-image]: https://badge.fury.io/gh/stav%2Fwgrep.svg
-[fury-url]:   https://badge.fury.io/gh/stav%2Fwgrep
-[inch-image]: http://inch-ci.org/github/stav/wgrep.svg?branch=master
-[inch-url]:   http://inch-ci.org/github/stav/wgrep
-[deps-image]: https://david-dm.org/stav/wgrep/status.svg
-[deps-url]:   https://david-dm.org/stav/wgrep
 [cov-image]:  https://codecov.io/gh/stav/wgrep/branch/master/graph/badge.svg
 [cov-url]:    https://codecov.io/github/stav/wgrep
