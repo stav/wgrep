@@ -1,6 +1,6 @@
 {
   "name": "wgrep",
-  "version": "0.4.7",
+  "version": "0.4.8",
   "description": "Find text within all resources of a webpage",
   "main": "index.js",
   "bin": {
@@ -31,7 +31,6 @@
     "shelljs": "^0.8.4"
   },
   "devDependencies": {
-    "jest": "^27.2.5",
-    "lodash": ">=4.17.21"
+    "jest": "^27.2.5"
   }
 }

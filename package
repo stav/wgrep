@@ -1,11 +1,2 @@
 
 Notes for package.json
-
-lodash dev dependecy added to address vulnerability:
-
-	GHSA-p6mc-m468-83gw (low severity)
-
-	Bump lodash from 4.17.15 to 4.17.19
-
-	https://github.com/stav/wgrep/network/alert/package-lock.json/lodash/open
-
