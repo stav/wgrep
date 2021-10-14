@@ -15,39 +15,58 @@ const download = async function ( url, directory ) {
   // console.log('* directory', directory)
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
-  let errors = {flag: false, net: 0, buf: 0, main: 0, page: 0 };
+  const errors = { net: 0, buf: 0, main: 0, page: 0, fs: 0 };
 
-  page.on('error', e=> { errors.flag = true; errors.main++ })
-  page.on('pageerror', e=> { errors.flag = true; errors.page++ })
+  let payload = null;
+  let logStream = fs.createWriteStream(path.join( __dirname, directory, '.wgrep.log'));
+  // logStream.on('finish', () => {
+  //     console.log('wrote all data to log file');
+  // });
+  page.on('error', e=> { errors.main++ })
+  page.on('pageerror', e=> { errors.page++ })
   page.on('response', async (response) => {
     const _url = new URL(response.url());
+
     let filePath = path.join( __dirname, directory, _url.pathname );
-    // console.log('filePath', filePath)
+    // console.log('* filePath', filePath)
     if (path.extname(_url.pathname).trim() === '') {
-      filePath = `${filePath}/index.html`;
+      filePath = path.join(filePath, 'index.html');
     }
+
     try {
-      await fse.outputFile(filePath, await response.buffer());
+      payload = await response.buffer();
     }
     catch (e) {
-      console.warn(e.toString(), _url.href, filePath)
-      errors.flag = true;
+      logStream.write(`${e} (${_url.href})\n`)
       errors.buf++
+    }
+    try {
+      if (!payload) {
+        logStream.write('No payload for ' + _url + '\n')
+      }
+      else {
+        await fse.outputFile(filePath, payload);
+      }
+    }
+    catch (e) {
+      logStream.write(`${e} (${_url.href}) ${filePath}\n`)
+      errors.fs++
     }
   });
 
   try {
+    // console.log('* goto', url)
     await page.goto( url, {waitUntil: 'networkidle2'});
     await page.screenshot({path: 'screencap.png', fullPage: true});
   }
   catch (e) {
-    console.log(e.toString())
-    errors.flag = true;
+    logStream.write(e.toString());
     errors.net++
   }
   finally {
-    await browser.close();
-    return errors
+    await browser.close()
+    logStream.write(`\n${JSON.stringify(errors, null, 2)}\n`)
+    logStream.end()
   }
 };
 
@@ -64,7 +83,9 @@ const find = ( directory, regex ) => {
     test = shell.test;
   if ( test('-d', directory) ) {
     console.log(`Looking in "${directory}" for '${regex}'`)
-    const files = find( directory ).filter( file=> test('-f', file) );
+    const files = find( directory )
+      .filter( file => test('-f', file) )
+      .filter( file => !file.includes('.wgrep.log') );
     return grep('-l', regex, files ).trim().split('\n').filter(_=>_)
   }
   else {
@@ -83,6 +104,19 @@ const show = files => {
   }
 }
 
+/**
+ * Create the output directory if it doesn't exist
+ */
+const ensureOutput = directory => {
+  const d = path.join( __dirname, directory );
+
+  if (!fs.existsSync(d)){
+    console.log('Creating output directory', d)
+    fs.mkdirSync(d);
+  }
+}
+
+exports.ensureOutput = ensureOutput;
 exports.download = download;
 exports.find = find;
 exports.show = show;

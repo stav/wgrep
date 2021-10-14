@@ -19,11 +19,9 @@ const { version } = require('./package.json');
       const options = program.opts()
 
       co(async function () {
+        wgrep.ensureOutput(options.directory)
         console.log(`Calling for "${regex}" in "${options.directory}" from "${url}" with user "${options.username}"`)
-        const errors = await wgrep.download( url, options.directory );
-        if ( errors.flag ) {
-          console.log('Errors', errors)
-        }
+        await wgrep.download( url, options.directory );
         wgrep.show(wgrep.find( options.directory, regex ))
       });
 

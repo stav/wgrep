@@ -3,7 +3,7 @@
 
 [![Coverage][cov-image]][cov-url]
 [![Tests][test-image]][test-url]
-[![Badge Fury][fury-image]]
+![Badge Fury][fury-image]
 
 This `node` command-line utility uses a headless browser (Puppeteer) to render
 a webpage and download all resources it may need. These resources including the
@@ -49,6 +49,7 @@ Now let's see what the total download size was:
 	Usage: wgrep [options] <regex> <url>
 
 	Options:
+	  -V, --version                output the version number
 	  -d, --directory <directory>  The output directory (default: "output")
 	  -u, --username <username>    The user to authenticate as
 	  -h, --help                   output usage information
