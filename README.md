@@ -22,7 +22,7 @@ download size.*
 
 	$ git clone https://github.com/stav/wgrep.git
 	$ cd wgrep
-	$ npm install -g
+	$ npm install
 
 ## Usage example
 
