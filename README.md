@@ -1,9 +1,10 @@
 # wgrep
-> Web grep: search all rendered resources used by a URI
+
+Web grep: search all rendered resources used by a URI
 
 [![Coverage][cov-image]][cov-url]
-[![Tests][test-image]][test-url]
-![Badge Fury][fury-image]
+[![Releases][rel-image]][rel-url]
+[![Build][build-image]][build-url]
 
 This `node` command-line utility uses a headless browser (Puppeteer) to render
 a webpage and download all resources it may need. These resources including the
@@ -77,9 +78,11 @@ repo and submit a pull request:
 
 Apache 2.0
 
-<!-- Markdown link & img dfn's -->
-[test-image]: https://github.com/stav/wgrep/workflows/tests/badge.svg
-[test-url]:   https://github.com/stav/wgrep/actions
-[fury-image]: https://badge.fury.io/gh/stav%2Fwgrep.svg
-[cov-image]:  https://codecov.io/gh/stav/wgrep/branch/master/graph/badge.svg
-[cov-url]:    https://codecov.io/github/stav/wgrep
+
+[rel-image]:   https://img.shields.io/github/release/stav/wgrep.svg
+[cov-image]:   https://codecov.io/gh/stav/wgrep/branch/master/graph/badge.svg
+[build-image]: https://github.com/stav/wgrep/actions/workflows/tests.yml/badge.svg
+
+[rel-url]:     https://github.com/stav/wgrep/releases
+[cov-url]:     https://codecov.io/github/stav/wgrep
+[build-url]:   https://github.com/stav/wgrep/actions
