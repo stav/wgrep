@@ -1,6 +1,6 @@
 {
   "name": "wgrep",
-  "version": "0.4.9",
+  "version": "0.4.10",
   "description": "Find text within all resources of a webpage",
   "main": "index.js",
   "bin": {
@@ -25,12 +25,12 @@
   "dependencies": {
     "co": "^4.6.0",
     "co-prompt": "^1.0.0",
-    "commander": "^9.1.0",
-    "fs-extra": "^10.0.1",
-    "puppeteer": "^13.5.2",
+    "commander": "^10.0.0",
+    "fs-extra": "^11.1.0",
+    "puppeteer": "^19.6.3",
     "shelljs": "^0.8.5"
   },
   "devDependencies": {
-    "jest": "^27.5.1"
+    "jest": "^29.4.2"
   }
 }
