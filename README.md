@@ -29,7 +29,7 @@ download size.*
 
 Let's try to find the string "stav" from the repository website on GitHub:
 
-	$ wgrep stav https://github.com/stav/wgrep
+	$ npx wgrep stav https://github.com/stav/wgrep
 
 	Calling for "stav" in "output" from "https://github.com/stav/wgrep" with user "undefined"
 	Looking in "output" for 'stav'
